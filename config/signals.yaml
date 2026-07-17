@@ -1,0 +1,18 @@
+# Regime-filter thresholds (thesis.md §4, plan.md Sprint 3.2).
+# Values are fit in-sample only (2007-2017) and recorded here with fit-window
+# metadata — never hand-tuned against out-of-sample results.
+
+fit_window:
+  start: null
+  end: null
+
+thresholds:
+  theta_1_ratio: null        # VIX / VIX3M ratio threshold
+  theta_2_slope: null        # M1/M2 slope threshold
+  momentum_lookback_days: null
+
+regimes:
+  - HARVEST
+  - NEUTRAL
+  - STRESS
+  - POST_SPIKE

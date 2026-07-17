@@ -1,0 +1,36 @@
+# Every external URL/endpoint used by the ETL lives here — nothing hardcoded in code
+# (plan.md Sprint 0.2). Each entry carries a `last_verified` date; CBOE reorganizes
+# its site periodically, and a 404 should be fixed here, not in code.
+#
+# Populated during Sprint 1 (plan.md Sprint 1.1). Placeholders below mark the
+# expected shape.
+
+cboe_indices:
+  vix:
+    url: null            # e.g. https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv
+    last_verified: null
+  vix3m:
+    url: null
+    last_verified: null
+  vix9d:
+    url: null
+    last_verified: null
+
+cfe_futures:
+  vx_historical_data_page:
+    url: null             # CBOE CFE historical data page, symbol VX
+    last_verified: null
+
+etp_prices:
+  vxx:
+    source: null           # e.g. yfinance
+    last_verified: null
+  uvxy:
+    source: null
+    last_verified: null
+
+options_chains:
+  # Sprint 4+ only — do not populate/spend until the Sprint 3 GO/NO-GO gate passes.
+  vendor: null              # e.g. firstratedata, ORATS, Cboe DataShop
+  url: null
+  last_verified: null

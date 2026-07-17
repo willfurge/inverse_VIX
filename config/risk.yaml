@@ -1,0 +1,14 @@
+# Position sizing and hard risk limits (thesis.md §8). Broker position sizing must
+# read from this file, not from feel (plan.md Sprint 7 pre-flight checklist).
+
+position_sizing:
+  risk_per_trade_pct: null              # % of sleeve NAV risked per trade (full size)
+  half_size_risk_per_trade_pct: null    # first-10-trades sizing (plan.md Sprint 7)
+
+limits:
+  max_sleeve_drawdown_pct: null
+  max_concurrent_positions: null
+
+kill_criteria:
+  # thesis.md §7 — printed and pinned, not just config.
+  notes: "See thesis.md Section 7 for the full kill-criteria list."

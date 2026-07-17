@@ -1,0 +1,42 @@
+# Environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Data — regenerable via scripts/refresh_data.py (plan.md Sprint 1.2 step 5).
+# Directory structure is preserved via .gitkeep; contents are never tracked.
+data/*
+!data/raw/
+!data/interim/
+!data/processed/
+data/raw/*
+!data/raw/cfe_vx/
+!data/raw/indices/
+!data/raw/etp/
+data/raw/cfe_vx/*
+!data/raw/cfe_vx/.gitkeep
+data/raw/indices/*
+!data/raw/indices/.gitkeep
+data/raw/etp/*
+!data/raw/etp/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Parquet files outside the data contract above
+*.parquet
