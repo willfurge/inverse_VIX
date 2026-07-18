@@ -20,6 +20,7 @@ Thumbs.db
 # Data — regenerable via scripts/refresh_data.py (plan.md Sprint 1.2 step 5).
 # Directory structure is preserved via .gitkeep; contents are never tracked.
 data/*
+!data/ANOMALIES.md
 !data/raw/
 !data/interim/
 !data/processed/

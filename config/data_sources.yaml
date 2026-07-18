@@ -2,32 +2,43 @@
 # (plan.md Sprint 0.2). Each entry carries a `last_verified` date; CBOE reorganizes
 # its site periodically, and a 404 should be fixed here, not in code.
 #
-# Populated during Sprint 1 (plan.md Sprint 1.1). Placeholders below mark the
-# expected shape.
+# Verified 2026-07-17. CFE's public per-contract price files begin in 2013;
+# Yahoo's current VXX identity begins in 2018. Both are recorded explicitly so
+# the refresh command fails loudly if the research coverage requirement is not met.
 
 cboe_indices:
+  max_staleness_days: 1
   vix:
-    url: null            # e.g. https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv
-    last_verified: null
+    url: https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv
+    last_verified: 2026-07-17
   vix3m:
-    url: null
-    last_verified: null
+    url: https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv
+    last_verified: 2026-07-17
   vix9d:
-    url: null
-    last_verified: null
+    url: https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX9D_History.csv
+    last_verified: 2026-07-17
 
 cfe_futures:
-  vx_historical_data_page:
-    url: null             # CBOE CFE historical data page, symbol VX
-    last_verified: null
+  historical_data_page:
+    url: https://www.cboe.com/markets/us/futures/market-statistics/historical-data/futures
+    last_verified: 2026-07-17
+  contract_csv_url_template: https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_{expiry:%Y-%m-%d}.csv
+  public_coverage_start: 2013-01-01
+  required_coverage_start: 2005-01-01
 
 etp_prices:
+  provider: yfinance
+  auto_adjust: true
   vxx:
-    source: null           # e.g. yfinance
-    last_verified: null
+    ticker: VXX
+    required_coverage_start: 2009-01-01
+    provider_coverage_start: 2018-01-25
+    last_verified: 2026-07-17
   uvxy:
-    source: null
-    last_verified: null
+    ticker: UVXY
+    required_coverage_start: 2011-10-04
+    provider_coverage_start: 2011-10-04
+    last_verified: 2026-07-17
 
 options_chains:
   # Sprint 4+ only — do not populate/spend until the Sprint 3 GO/NO-GO gate passes.
