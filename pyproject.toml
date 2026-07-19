@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "vixharvest"
 version = "0.1.0"
-description = "VIX term-structure contango harvest strategy: ETL, curve construction, signal research, backtesting, and alerting."
+description = "Reproducible research on VIX term structure, regime filters, and proxy backtests."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

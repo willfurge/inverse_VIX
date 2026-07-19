@@ -1,4 +1,4 @@
-"""vixharvest — VIX-ETP contango harvest strategy: ETL, curve construction, signal
+"""vixharvest: VIX-ETP contango harvest research package.
 research, backtesting, and alerting.
 
 See thesis.md (repo root) for strategy rationale and load-bearing assumptions, and

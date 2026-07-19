@@ -1,4 +1,4 @@
-# Position sizing and hard risk limits (thesis.md §8). Broker position sizing must
+# Position sizing and hard risk limits (thesis.md section 8). Broker position sizing must
 # read from this file, not from feel (plan.md Sprint 7 pre-flight checklist).
 
 position_sizing:
@@ -10,5 +10,5 @@ limits:
   max_concurrent_positions: null
 
 kill_criteria:
-  # thesis.md §7 — printed and pinned, not just config.
+  # thesis.md section 7. Print and pin this policy with the live checklist.
   notes: "See thesis.md Section 7 for the full kill-criteria list."

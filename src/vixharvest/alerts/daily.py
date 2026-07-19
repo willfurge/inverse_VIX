@@ -1,6 +1,6 @@
 """End-of-day signal run and notification (plan.md Sprint 6).
 
-Failure-loud by design: if data refresh fails, the alert must say so — a silent
+Failure-loud by design: if data refresh fails, the alert must say so; a silent
 no-alert must be distinguishable from "no signal."
 """
 

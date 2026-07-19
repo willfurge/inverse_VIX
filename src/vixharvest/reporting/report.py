@@ -1,4 +1,4 @@
-"""Backtest reporting: expectancy, drawdown, stress-window P&L (thesis.md §11.5).
+"""Backtest reporting: expectancy, drawdown, stress-window P&L (thesis.md section 11.5).
 
 Sprint 5 (plan.md).
 """

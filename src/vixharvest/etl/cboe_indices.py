@@ -1,6 +1,6 @@
 """Download and parse VIX / VIX3M / VIX9D index history CSVs from the CBOE CDN.
 
-Sprint 1.2 step 1 (plan.md) — the fastest win; unlocks the VIX/VIX3M ratio regime
+Sprint 1.2 step 1 (plan.md); this unlocks the VIX/VIX3M ratio regime
 flag. Writes data/interim/indices.parquet.
 """
 

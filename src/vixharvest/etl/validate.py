@@ -1,4 +1,4 @@
-"""Shared ingest-time validation pass (thesis.md §9, plan.md Sprint 1.2 step 4).
+"""Shared ingest-time validation pass (thesis.md section 9, plan.md Sprint 1.2 step 4).
 
 Every loader calls this; failures raise, they never warn-and-continue.
 """

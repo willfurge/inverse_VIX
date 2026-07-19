@@ -1,11 +1,8 @@
-# Environments
+# Python environments and caches
 .venv/
 venv/
 __pycache__/
-*.pyc
-*.pyo
-
-# Build artifacts
+*.py[cod]
 *.egg-info/
 build/
 dist/
@@ -13,12 +10,13 @@ dist/
 .mypy_cache/
 .ruff_cache/
 
-# OS / editor
+# Operating-system and editor files
 .DS_Store
 Thumbs.db
+.vscode/
+*.swp
 
-# Data — regenerable via scripts/refresh_data.py (plan.md Sprint 1.2 step 5).
-# Directory structure is preserved via .gitkeep; contents are never tracked.
+# Local data downloaded by scripts/refresh_data.py
 data/*
 !data/ANOMALIES.md
 !data/raw/
@@ -39,5 +37,24 @@ data/interim/*
 data/processed/*
 !data/processed/.gitkeep
 
-# Parquet files outside the data contract above
+# Exploratory notebooks are not part of the supported pipeline
+notebooks/*
+!notebooks/.gitkeep
+
+# Generated result details. Markdown reports remain viewable snapshots.
+results/*
+!results/
+!results/*.md
+
+# Binary and tabular intermediates
 *.parquet
+*.pickle
+*.pkl
+
+# Logs, local settings, and credentials
+*.log
+.env
+.env.*
+*.pem
+*.key
+credentials.json

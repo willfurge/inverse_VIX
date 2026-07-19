@@ -1,4 +1,4 @@
-# Every external URL/endpoint used by the ETL lives here — nothing hardcoded in code
+# Every external URL and endpoint used by the ETL lives here.
 # (plan.md Sprint 0.2). Each entry carries a `last_verified` date; CBOE reorganizes
 # its site periodically, and a 404 should be fixed here, not in code.
 #
@@ -41,7 +41,7 @@ etp_prices:
     last_verified: 2026-07-17
 
 options_chains:
-  # Sprint 4+ only — do not populate/spend until the Sprint 3 GO/NO-GO gate passes.
+  # Sprint 4+ only. Do not populate or spend until the Sprint 3 gate passes.
   vendor: null              # e.g. firstratedata, ORATS, Cboe DataShop
   url: null
   last_verified: null

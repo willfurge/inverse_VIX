@@ -1,15 +1,20 @@
-# Regime-filter thresholds (thesis.md §4, plan.md Sprint 3.2).
-# Values are fit in-sample only (2007-2017) and recorded here with fit-window
-# metadata — never hand-tuned against out-of-sample results.
+# Regime-filter thresholds (thesis.md section 4, plan.md Sprint 3.2).
+# Frozen from the completed 2013-2017 fit. Do not tune against 2018+ results.
 
 fit_window:
-  start: null
-  end: null
+  start: 2013-01-16
+  end: 2017-12-29
+  method: frozen_completed_fit
+  note: Public CFE contract history starts in 2013, so the planned 2007 start is unavailable.
 
 thresholds:
-  theta_1_ratio: null        # VIX / VIX3M ratio threshold
-  theta_2_slope: null        # M1/M2 slope threshold
-  momentum_lookback_days: null
+  theta_1_ratio: 0.85        # VIX / VIX3M ratio threshold
+  theta_2_slope: 0.05        # M1/M2 slope threshold
+  momentum_lookback_days: 5
+
+classification:
+  stress_overrides_harvest: true
+  harvest_requires_non_rising_ratio_delta: true
 
 regimes:
   - HARVEST

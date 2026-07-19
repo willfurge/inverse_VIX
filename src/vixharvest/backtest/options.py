@@ -1,6 +1,6 @@
-"""Options spread modeling: debit spread construction and pricing (thesis.md §5.1).
+"""Options spread modeling: debit spread construction and pricing (thesis.md section 5.1).
 
-Sprint 4-5 (plan.md) — conditional on the Sprint 3 GO/NO-GO gate passing. Do not
+Sprint 4-5 (plan.md), conditional on the Sprint 3 GO/NO-GO gate passing. Do not
 implement spread-pricing logic before results/sprint3_gate.md says GO.
 """
 
