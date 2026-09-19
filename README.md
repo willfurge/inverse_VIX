@@ -21,10 +21,10 @@ The full reproduction sequence is documented in [docs/REPRODUCING.md](docs/REPRO
 
 These five scripts are the supported research interface. The package under `src/` contains the implementation used by them; notebooks are exploratory and are not required.
 
-1. Refresh the raw and interim inputs:
+1. Refresh the raw and interim inputs: allow incomplete coverage is required, and is a known bug due to an assertion for longer history than is supported by CBOE.
 
 	```powershell
-	python scripts/refresh_data.py
+	python scripts/refresh_data.py --allow-incomplete-coverage
 	```
 
 2. Build the processed panel and display its latest row:
